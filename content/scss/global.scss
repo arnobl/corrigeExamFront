@@ -5,6 +5,28 @@
 @import '~primeicons/primeicons.css';
 //@import '~perfect-scrollbar/css/perfect-scrollbar.css';
 
+.formattedbr {
+  white-space: pre-line;
+  //  margin-top: -1rem;
+}
+
+.myfloat {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  top: 20px;
+  left: 20px;
+  background-color: #fff;
+  color: #999;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+.my-float {
+  margin-top: 5px;
+}
+
 /* ==============================================================
 Bootstrap tweaks
 ===============================================================*/
@@ -21,6 +43,11 @@ h4 {
 a {
   color: #533f03;
   font-weight: bold;
+}
+
+.mylink.p-button.p-button-primary {
+  color: #ffffff;
+  font-weight: normal;
 }
 
 a:hover {
@@ -46,6 +73,10 @@ a:hover {
   color: $dropdown-link-hover-color;
 }
 
+.p-rating {
+  flex-flow: wrap;
+  width: 100%;
+}
 /* ==========================================================================
 Browser Upgrade Prompt
 ========================================================================== */
@@ -184,6 +215,10 @@ entity detail page css
       padding: 0.5em 0;
     }
     dd {
+      .p-button-primary {
+        margin-top: 10px;
+      }
+
       border-bottom: 1px solid #eee;
       padding: 0.5em 0;
       margin-left: 0;
